@@ -3,10 +3,17 @@
   margin-bottom: 20px;
   padding: 15px 30px;
   background: #1d3557;
+  transition: background-color 0.4s;
   color: #f1faee;
+  transition: color 0.4s;
   font-size: 24px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #a8dadc;
+  color: #1d3557;
 }
 
 .star {
@@ -14,6 +21,12 @@
   margin-bottom: 20px;
   font-size: 48px;
   cursor: pointer;
+  transform: rotate(0);
+  transition: transform 0.4s;
+}
+
+.star:hover {
+  transform: rotate(-90deg);
 }
 
 .article {
@@ -21,12 +34,20 @@
   background: #a8dadc;
   border-radius: 5px;
   color: #54819e;
+  transition: color 0.4s;
   text-align: center;
-  transition: color 0.5s;
+}
+
+.article:hover {
+  color: #1d3557;
 }
 
 .article-title {
   margin-bottom: 12px;
   font-size: 24px;
-  transition: transform 0.5s;
+  transition: scale 0.4s;
+}
+
+.article:hover .article-title {
+  scale: 1.2;
 }
